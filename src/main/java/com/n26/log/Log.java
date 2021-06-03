@@ -1,4 +1,4 @@
-package com.n26.Log;
+package com.n26.log;
 
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
