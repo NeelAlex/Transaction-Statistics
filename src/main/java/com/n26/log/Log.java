@@ -19,12 +19,12 @@ public class Log {
 		LOGGER.info("called getStatistics");
 	}
 	
-	@Before("execution(public void com.n26.controller.TransactionsStatisticsController.postTransactions(*))")
+	@Before("execution(public * com.n26.controller.TransactionsStatisticsController.postTransactions(*))")
 	public void logBeforePostTransactions() {
 		LOGGER.info("called postTransactions");
 	}
 	
-	@Before("execution(public void com.n26.controller.TransactionsStatisticsController.deleteTransactions())")
+	@Before("execution(public * com.n26.controller.TransactionsStatisticsController.deleteTransactions())")
 	public void logBeforeDeleteTransactions() {
 		LOGGER.info("called deleteTransactions");
 	}
